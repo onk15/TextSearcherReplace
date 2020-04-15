@@ -21,14 +21,6 @@ public class Main extends JFrame
         panelSzukania.add(zamien);
         panelSzukania.add(etykietaNa);
         panelSzukania.add(nowyTekst);
-       
-        //obszarTekstowy.select(0, 2);// - zaznacza obszar, podany od kąd do kąd
-        //obszarTekstowy.replaceSelection("lala"); - zamienić obszar, który jest zaznaczony
-        //obszarTekstowy.replaceRange("lala", 0, 3); - range z ang. zasięg, podmieniamy na string z danego obszaru
-        //obszarTekstowy.insert("jakis tam", 18);
-        //obszarTekstowy.append("dolaczone do konca");
-        //obszarTekstowy.select(obszarTekstowy.getText().indexOf("test"), obszarTekstowy.getText().indexOf("test")+"test".length());
-        
         znajdz.addActionListener(new znajdowanieHandler());
         zamien.addActionListener(new zamienianieHandler());
         this.getContentPane().add(obszarPrzewijania, BorderLayout.NORTH);
